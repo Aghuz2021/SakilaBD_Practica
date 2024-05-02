@@ -12,7 +12,7 @@ SELECT first_name, last_name
 FROM actor;
 ```
 
-La cláusula WHERE
+# La cláusula WHERE
 
 Escribe una consulta que seleccione todos los datos de la tabla film donde la clasificación (rating) sea 'R'.
 ```sql
@@ -28,7 +28,7 @@ FROM customer
 WHERE age > 30;
 ```
 
-La cláusula FROM
+# La cláusula FROM
 
 Escribe una consulta que seleccione todos los datos de la tabla address.
 ```sql
@@ -42,7 +42,7 @@ SELECT name
 FROM category;
 ```
 
-La operación renombramiento
+# La operación renombramiento
 
 Escribe una consulta que seleccione el título (title) de la tabla film y lo renombre como nombre_pelicula.
 ```sql
@@ -50,7 +50,7 @@ SELECT title AS nombre_pelicula
 FROM film;
 ```
 
-Operaciones con cadenas de caracteres
+# Operaciones con cadenas de caracteres
 
 Escribe una consulta que seleccione todos los nombres de la tabla actor que comiencen con la letra 'J'.
 ```sql
@@ -66,7 +66,7 @@ FROM city
 WHERE name LIKE '%o';
 ```
 
-Orden en la presentación de las tuplas
+# Orden en la presentación de las tuplas
 
 Escribe una consulta que seleccione todos los datos de la tabla film y los ordene por el título (title) de forma ascendente.
 ```sql
@@ -81,43 +81,14 @@ SELECT title
 FROM film
 ORDER BY title DESC;
 ```
-
-Operaciones sobre conjuntos
-
-Escribe una consulta que combine los resultados de las tablas actor y customer, eliminando duplicados.
-```sql
-SELECT *
-FROM actor
-UNION
-SELECT *
-FROM customer;
-```
-
-Escribe una consulta que encuentre los actores que también son clientes utilizando la operación de intersección.
-```sql
-SELECT *
-FROM actor
-INTERSECT
-SELECT *
-FROM customer;
-```
-
-Funciones de agregación
+# Funciones de agregación
 
 Escribe una consulta que calcule la media del precio (rental_rate) de todas las películas.
 ```sql
 SELECT AVG(rental_rate) AS promedio_renta
 FROM film;
 ```
-
-Escribe una consulta que cuente cuántas veces se ha alquilado cada película.
-```sql
-SELECT film_id, COUNT(*) AS veces_alquilada
-FROM rental
-GROUP BY film_id;
-```
-
-Valores nulos
+# Valores nulos
 
 Escribe una consulta que seleccione todos los datos de la tabla address donde la columna district es nula.
 ```sql
