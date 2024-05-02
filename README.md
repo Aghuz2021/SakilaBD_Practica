@@ -1,4 +1,4 @@
-#La cláusula SELECT en SQL
+# La cláusula SELECT en SQL
 
 Escribe una consulta que seleccione todos los datos de la tabla actor.
 ```sql
